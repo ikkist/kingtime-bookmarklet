@@ -1,0 +1,16 @@
+{
+  "name": "kingtime-bookmarklet",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npm run build; google-closure-compiler --js=dist/index.js --js_output_file=dist/index.min.js",
+    "build": "tsc",
+    "build:bookmarklet": "npm run compile; node bookmarklet-generator.js",
+    "fmt": "prettier src/ --write"
+  },
+  "devDependencies": {
+    "google-closure-compiler": "^20210302.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  }
+}

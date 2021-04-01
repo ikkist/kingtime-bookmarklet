@@ -1,0 +1,1 @@
+javacript:(function(){function hello(){alert("hello")}hello();})();
