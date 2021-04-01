@@ -5,7 +5,7 @@
   "scripts": {
     "compile": "npm run build; google-closure-compiler --js=dist/index.js --js_output_file=dist/index.min.js",
     "build": "tsc",
-    "build:bookmarklet": "npm run compile; node bookmarklet-generator.js",
+    "build:bookmarklet": "npm run compile; npm run fmt; node bookmarklet-generator.js",
     "fmt": "prettier src/ --write"
   },
   "devDependencies": {
